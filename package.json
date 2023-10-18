@@ -1,37 +1,19 @@
 {
-    "name" : "shoe",
-    "version" : "0.0.15",
-    "description" : "streaming sockjs for node and the browser",
+    "name" : "neoshoe",
+    "version" : "0.0.1",
+    "description" : "resurrection of shoe package, streaming sockjs for node and the browser",
     "main" : "index.js",
-    "browserify" : "browser.js",
     "directories" : {
         "example" : "example"
     },
     "dependencies" : {
-        "sockjs" : "0.3.7"
+        "sockjs" : "0.3.24"
     },
     "bundledDependencies" : [ "sockjs-client" ],
     "devDependencies" : {
         "through": "~2.3.4",
         "tape": "~1.0.4",
         "testling": "~1.4.1"
-    },
-    "scripts": {
-        "test": "testling ."
-    },
-    "testling" : {
-        "files": "test/browser.js",
-        "server": "test/server.js",
-        "browsers": [
-            "ie/8..latest",
-            "chrome/latest",
-            "firefox/latest",
-            "safari/latest",
-            "opera/latest",
-            "iphone/latest",
-            "ipad/latest",
-            "android/latest"
-        ]
     },
     "repository" : {
         "type" : "git",
@@ -42,13 +24,13 @@
         "websocket",
         "stream",
         "sock",
-        "browserify"
+        "shoe",
+        "sockjs"
     ],
     "author" : {
-        "name" : "James Halliday",
-        "email" : "mail@substack.net",
-        "url" : "http://substack.net"
+        "name" : "Dmitry Shvetsov",
+        "url" : "https://dmitryshvetsov.com"
     },
     "license" : "MIT",
-    "engine" : { "node" : ">=0.6" }
+    "engine" : { "node" : ">=18" }
 }
